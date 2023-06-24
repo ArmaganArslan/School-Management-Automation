@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="548.0" prefWidth="706.0" stylesheets="@../css/style.css" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.OgrenciController">
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <children>
+      <ChoiceBox fx:id="cb_BolumSec" layoutX="220.0" layoutY="28.0" prefHeight="26.0" prefWidth="189.0" />
+      <TableView fx:id="tbl_Ogrenci" layoutX="220.0" layoutY="61.0" prefHeight="486.0" prefWidth="485.0">
+        <columns>
+          <TableColumn fx:id="tbl_No" prefWidth="92.79997253417969" text="Öğrenci No" />
+          <TableColumn fx:id="tbl_Adi" prefWidth="77.60003662109375" text="Adı" />
+            <TableColumn fx:id="tbl_Soyadi" prefWidth="79.199951171875" text="Soyadı" />
+            <TableColumn fx:id="tbl_Cinsiyet" prefWidth="49.60003662109375" text="Cinsiyet" />
+            <TableColumn fx:id="tbl_DogumTarihi" prefWidth="102.39996337890625" text="Doğum Tarihi" />
+            <TableColumn fx:id="tbl_TcNo" prefWidth="83.199951171875" text="TC" />
+        </columns>
+      </TableView>
+      <Label layoutX="220.0" layoutY="10.0" text="Bölüm Seçiniz" />
+      <Button fx:id="btn_Ekle" layoutX="161.0" layoutY="386.0" mnemonicParsing="false" onAction="#btn_Ekle_Click" prefHeight="34.0" prefWidth="29.0">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/add.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="btn_Sil" layoutX="161.0" layoutY="496.0" mnemonicParsing="false" onAction="#btn_Sil_Click">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/remove.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="btn_Guncelle" layoutX="161.0" layoutY="441.0" mnemonicParsing="false" onAction="#btn_Guncelle_Click">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/update.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <TextField fx:id="txt_OgrenciNo" layoutX="19.0" layoutY="96.0" prefHeight="26.0" prefWidth="182.0" promptText="Öğrenci Numarası" />
+      <TextField fx:id="txt_Adi" layoutX="19.0" layoutY="135.0" prefHeight="26.0" prefWidth="182.0" promptText="Adı" />
+      <TextField fx:id="txt_Soyadi" layoutX="19.0" layoutY="178.0" prefHeight="26.0" prefWidth="182.0" promptText="Soyadı" />
+      <ChoiceBox fx:id="cb_Cinsiyet" layoutX="80.0" layoutY="309.0" prefHeight="26.0" prefWidth="119.0" />
+      <DatePicker fx:id="dt_DogumTarihi" layoutX="91.0" layoutY="346.0" prefHeight="26.0" prefWidth="108.0" promptText="2000-01-01" />
+      <TextField fx:id="txt_TcNo" layoutX="19.0" layoutY="216.0" prefHeight="26.0" prefWidth="182.0" promptText="TC Kimlik No" />
+      <ChoiceBox fx:id="cb_BolumDegistir" layoutX="17.0" layoutY="270.0" prefHeight="26.0" prefWidth="189.0" />
+      <Button fx:id="btn_TumOgr" layoutX="485.0" layoutY="13.0" mnemonicParsing="false" onAction="#btn_TumOgr_Click" prefHeight="35.0" prefWidth="135.0" text="Tüm Öğrenciler">
+         <graphic>
+            <ImageView fitHeight="27.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/data-recovery.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="btn_Temizle" layoutX="18.0" layoutY="389.0" mnemonicParsing="false" onAction="#btn_Temizle_Click" prefHeight="40.0" prefWidth="47.0">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/clear.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Label layoutX="21.0" layoutY="313.0" text="Cinsiyet" />
+      <Label layoutX="22.0" layoutY="252.0" text="Bölüm" />
+      <Label layoutX="10.0" layoutY="352.0" text="Doğum Tarihi" />
+   </children>
+</AnchorPane>

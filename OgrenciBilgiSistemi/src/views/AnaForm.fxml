@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchor_Ana" prefHeight="548.0" prefWidth="917.0" stylesheets="@../css/anaform-style.css" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AnaFormController">
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <children>
+      <AnchorPane fx:id="anchor_Tum" layoutX="136.0" layoutY="122.0" prefHeight="548.0" prefWidth="917.0" stylesheets="@../css/anaform-style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane fx:id="anchor_Sol" prefHeight="548.0" prefWidth="212.0" stylesheets="@../css/anaform-style.css" />
+            <AnchorPane fx:id="anchor_Sag" layoutX="212.0" prefHeight="548.0" prefWidth="706.0" stylesheets="@../css/anaform-style.css" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
